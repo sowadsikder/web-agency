@@ -1,4 +1,4 @@
-/* universel style code */
+/* universal style code */
 
 *{
     margin: 0;
@@ -13,5 +13,84 @@ h1,h2,h3,h4,h5,h6{
 }
 body{
     font-family: 'Poppins', sans-serif;
+}
+img{
+    max-width: 100%;
+    
+}
+button.btn-primary {
+    padding: 30px 90px;
+    background-color: rgb(42, 49, 163);
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 1.5px;
+    border: none;
+    border-radius: 10px;
+}
+
+/* nav style start */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 25px 0;
+    margin: auto;
+}
+.nav-main ul {
+    display: flex;
+}
+.nav-main ul > li{
+    list-style: none;
+}
+.nav-main ul > li > a{
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
     font-weight: 600;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+
+/* banner section styling start */
+
+header{
+    background-image: url('../asset/banner/banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    height: 100vh;
+}
+.banner-container {
+    margin-top: 200px;
+    width: 33%;
+    padding-left: 325px;
+    font-weight: 800;
+}
+h1.banner-title {
+    font-size: 55px;
+    margin-bottom: 70px;
+    color: #000000cf;
+}
+p.banner-description {
+    color: gray;
+    font-size: 18px;
+    line-height: 1.7em;
+    margin-bottom: 30px;
+    padding: 5px 0 5px 30px;
+    font-weight: 300;
+}
+p.banner-description::before{
+    content: '';
+    position: absolute;
+    border-left: 9px solid rgb(64, 121, 128);
+    top: 430px;
+    left: 320px;
+    height: 110px;
+}
+button#btn-primary {
+    margin-top: 50px;
 }
